@@ -29,8 +29,8 @@ class Tb_role extends CI_Controller{
     {   
         $this->load->library('form_validation');
 
-		$this->form_validation->set_rules('namaRole','NamaRole','required|integer');
-		$this->form_validation->set_rules('keteranganRole','KeteranganRole','required|integer');
+		$this->form_validation->set_rules('namaRole','NamaRole','required|max_length[100]');
+		$this->form_validation->set_rules('keteranganRole','KeteranganRole','required|max_length[100]');
 		
 		if($this->form_validation->run())     
         {   
@@ -61,8 +61,8 @@ class Tb_role extends CI_Controller{
         {
             $this->load->library('form_validation');
 
-			$this->form_validation->set_rules('namaRole','NamaRole','required|integer');
-			$this->form_validation->set_rules('keteranganRole','KeteranganRole','required|integer');
+			$this->form_validation->set_rules('namaRole','NamaRole','required|max_length[100]');
+			$this->form_validation->set_rules('keteranganRole','KeteranganRole','required|max_length[100]');
 		
 			if($this->form_validation->run())     
             {   
