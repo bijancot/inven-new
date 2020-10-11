@@ -10,11 +10,11 @@
             <div class="box-body">
                 <table class="table table-striped">
                     <tr>
-						<th>IdBarang</th>
-						<th>NamaBarang </th>
-						<th>SatuanBarang</th>
-						<th>DeskripsiBarang</th>
-						<th>Actions</th>
+						<th>Id Barang</th>
+						<th>Nama Barang </th>
+						<th>Satuan Barang</th>
+						<th>Deskripsi Barang</th>
+						<th>Aksi</th>
                     </tr>
                     <?php foreach($tb_barang as $t){ ?>
                     <tr>
