@@ -31,7 +31,7 @@ class Tb_barang extends CI_Controller{
 
 		$this->form_validation->set_rules('namaBarang_','NamaBarang ','required|max_length[200]');
 		$this->form_validation->set_rules('satuanBarang','SatuanBarang','required|max_length[200]');
-		$this->form_validation->set_rules('deskripsiBarang','DeskripsiBarang','required|integer');
+		$this->form_validation->set_rules('deskripsiBarang','DeskripsiBarang','required|max_length[200]');
 		
 		if($this->form_validation->run())     
         {   
@@ -65,7 +65,7 @@ class Tb_barang extends CI_Controller{
 
 			$this->form_validation->set_rules('namaBarang_','NamaBarang ','required|max_length[200]');
 			$this->form_validation->set_rules('satuanBarang','SatuanBarang','required|max_length[200]');
-			$this->form_validation->set_rules('deskripsiBarang','DeskripsiBarang','required|integer');
+			$this->form_validation->set_rules('deskripsiBarang','DeskripsiBarang','required|max_length[200]');
 		
 			if($this->form_validation->run())     
             {   
